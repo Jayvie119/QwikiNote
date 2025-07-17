@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QwikiNote</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>📝 QwikiNote</h1>
+
+  <form id="noteForm">
+    <input type="text" id="title" placeholder="Title" required />
+    <textarea id="content" placeholder="Write your note..." required></textarea>
+    
+    <div class = "form-actions">
+      <button type="submit" id = "submitBtn">Add Note</button>
+      <button type = "button" id = "cancelEditBtn" style = "display: none">Cancel</button>
+    </div>
+  </form>
+
+  <div id="notesList"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
